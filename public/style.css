@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Sora", sans-serif;
+}
+/* HEADER */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 70%;
+  margin-left: 7em;
+  margin-top: 1em;
+  margin-bottom: 2em;
+}
+.header-logo img {
+  width: 175px;
+}
+.header-links ul {
+  display: flex;
+}
+.header-links ul li {
+  list-style: none;
+  text-transform: capitalize;
+  margin-left: 2em;
+  font-size: 16px;
+  color: rgb(32, 32, 32);
+}
+.header-links ul li a {
+  text-decoration: none;
+  color: rgb(32, 32, 32);
+}
+.header-link {
+  position: relative;
+}
+.header-link::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 100%;
+  border-bottom: 2px solid black;
+  transition: all 0.3s ease-out;
+}
+.header-link:hover::before,
+.header-link:focus::before {
+  right: 0%;
+}
+/* CONTAINER */
+.container {
+  max-width: 75%;
+  margin: 0 auto;
+}
+/* HOME WRAPPER */
+.home-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.home-wrapper-typography {
+  max-width: 400px;
+}
+.home-wrapper-title h1 {
+  text-transform: capitalize;
+  font-size: 48px;
+  color: rgb(32, 32, 32);
+  font-weight: 550;
+  line-height: 1.1;
+}
+.home-wrapper-highlight-text h1 {
+  font-family: "Akaya Telivigala", cursive;
+  text-transform: uppercase;
+  color: orange;
+  font-size: 46px;
+}
+.home-wrapper-details {
+  margin-bottom: 1.5em;
+}
+.home-wrapper-details p {
+  text-transform: capitalize;
+  color: rgb(32, 32, 32, 0.6);
+  font-weight: 700;
+  font-size: 19px;
+}
+.home-wrapper-social-links a {
+  background-color: rgb(32, 32, 32);
+  color: white;
+  padding: 13px 35px;
+  border-radius: 25px;
+  text-decoration: none;
+  text-transform: capitalize;
+  font-size: 14px;
+  margin-right: 1.5em;
+}
+.avatar-image img {
+  max-width: 425px;
+  min-width: 425px;
+  max-height: 475px;
+  min-height: 475px;
+}
+.text-cursor {
+  display: inline-block;
+  position: relative;
+  top: -0.14em;
+  left: 10px;
+}
+.hidden {
+  opacity: 0;
+}
+#console {
+  color: rgb(32, 32, 32);
+  font-family: "Akaya Telivigala", cursive;
+  font-size: 46px;
+  font-weight: bold;
+}
+#word-flick {
+  display: inline;
+}
